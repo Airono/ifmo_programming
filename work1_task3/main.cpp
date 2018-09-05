@@ -7,15 +7,15 @@ using namespace std;
 
 int main()
 {
-    setlocale(0, ""); // подключение русского языка
-    cout << "Введите периметр треугольника: ";
+    setlocale(0, "");  // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЂСѓСЃСЃРєРѕРіРѕ СЏР·С‹РєР°
+    cout << "Р’РІРµРґРёС‚Рµ РїРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: ";
     double perimeter, side, side2, semiperimeter, square;
-    cin >> perimeter; // пользователь вводит периметр треугольника
-    side = perimeter / 3; // сторона
-    semiperimeter = perimeter / 2; // полупериметр
-    side2 = semiperimeter - side; // для упрощения выражения заменим на одну переменную
-    square = sqrt(semiperimeter * pow(side2, 3)); // вычисление площади
-    cout << endl << setw(10) << left << "Сторона" << setw(10) << left << "Площадь"; // вывод результата
+    cin >> perimeter; // РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРѕРґРёС‚ РїРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
+    side = perimeter / 3; // СЃС‚РѕСЂРѕРЅР°
+    semiperimeter = perimeter / 2; // РїРѕР»СѓРїРµСЂРёРјРµС‚СЂ
+    side2 = semiperimeter - side; // РґР»СЏ СѓРїСЂРѕС‰РµРЅРёСЏ РІС‹СЂР°Р¶РµРЅРёСЏ Р·Р°РјРµРЅРёРј РЅР° РѕРґРЅСѓ РїРµСЂРµРјРµРЅРЅСѓСЋ
+    square = sqrt(semiperimeter * pow(side2, 3)); // РІС‹С‡РёСЃР»РµРЅРёРµ РїР»РѕС‰Р°РґРё
+    cout << endl << setw(10) << left << "РЎС‚РѕСЂРѕРЅР°" << setw(10) << left << "РџР»РѕС‰Р°РґСЊ"; // РІС‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
     cout << endl << setw(10) << left << side << setw(10) << left << square;
     return 0;
 }
