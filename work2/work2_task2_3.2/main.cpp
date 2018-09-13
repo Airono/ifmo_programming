@@ -4,13 +4,14 @@ using namespace std;
 
 int main() {
 
+    setlocale(LC_ALL, "Russian");
     int a, b, temp;
     cout << "a = ";
     cin >> a;
     cout << "b = ";
     cin >> b;
     temp = a;
-    while (temp!=b) {
+    do {
         a = temp;
         if (a < b) {
             temp = a;
@@ -19,7 +20,7 @@ int main() {
         }
         temp = a - b;
         a = b;
-    }
+    } while (temp != b);
     cout << "НОД = " << b << endl;
     return 0;
 }

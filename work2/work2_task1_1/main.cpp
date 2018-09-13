@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    setlocale(LC_ALL, "Russian");
     double x, y;
-    cout << "Ââåäèòå êîîðäèíàòû: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹: ";
     cin >> x >> y;
     if (x * x + y * y < 9 && y > 0)
-        cout << "Âíóòðè";
+        cout << "Ð’Ð½ÑƒÑ‚Ñ€Ð¸";
     else if (x * x + y * y > 9 || y < 0)
-        cout << "Ñíàðóæè";
+        cout << "Ð¡Ð½Ð°Ñ€ÑƒÐ¶Ð¸";
     else
-        cout << "Íà ãðàíèöå";
+        cout << "ÐÐ° Ð³Ñ€Ð°Ð½Ð¸Ñ†Ðµ";
     return 0;
 }

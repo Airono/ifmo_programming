@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, ""); // подключение русского языка
+    setlocale(LC_ALL, "Russian"); // подключение русского языка
     wcout << L"Введите периметр треугольника: ";
     double perimeter;
     cin >> perimeter; // пользователь вводит периметр треугольника

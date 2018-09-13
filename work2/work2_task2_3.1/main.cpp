@@ -12,7 +12,7 @@ int main() {
     cin >> x2;
     cout << "\tx\tsin(x)\n";
     x = x1;
-    while (x < x2);{
+    while (x <= x2) {
         y = sin(x);
         cout << "\t" << x << "\t" << y << endl;
         x = x + 0.01;
