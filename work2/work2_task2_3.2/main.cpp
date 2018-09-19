@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
 
-    setlocale(LC_ALL, "Russian");
     int a, b, temp;
     cout << "a = ";
     cin >> a;
@@ -21,6 +20,6 @@ int main() {
         temp = a - b;
         a = b;
     } while (temp != b);
-    cout << "НОД = " << b << endl;
+    cout << "NOD = " << b << endl;
     return 0;
 }

@@ -1,19 +1,17 @@
 #include <iostream>
-#include <clocale>
 
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
     double x, y;
-    cout << "Введите координаты: ";
+    cout << "Enter coordinates: ";
     cin >> x >> y;
     if (x * x + y * y < 9 && y > 0)
-        cout << "Внутри";
+        cout << "Inside";
     else if (x * x + y * y > 9 || y < 0)
-        cout << "Снаружи";
+        cout << "Outside";
     else
-        cout << "На границе";
+        cout << "On the border";
     return 0;
 }
